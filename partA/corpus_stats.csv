@@ -1,0 +1,5 @@
+language,flores_code,sentences,whitespace_words,unicode_codepoints,utf8_bytes,avg_words_per_sentence,avg_bytes_per_sentence
+eng,eng_Latn,1012,21901,131966,132096,21.64,130.53
+hin,hin_Deva,1012,25643,131180,337439,25.34,333.44
+tam,tam_Taml,1012,16775,154131,421635,16.58,416.64
+kan,kan_Knda,1012,16100,138027,375341,15.91,370.89

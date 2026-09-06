@@ -1,0 +1,46 @@
+﻿================================================================================
+A2 CONCEPTUAL EXPERIMENT: LINE-WEIGHTED VS AGGREGATE CORPUS FERTILITY
+================================================================================
+
+--- Part 1: Controlled 2-Line Example ---
+Line 1:  2 words,  10 tokens -> fertility = 5.0
+Line 2: 100 words, 100 tokens -> fertility = 1.0
+
+Original line-level mean (line-weighted):
+  (5.0 + 1.0) / 2 = 3.000000
+Aggregate corpus fertility (word-weighted):
+  (10 + 100) / (2 + 100) = 110 / 102 = 1.078431
+Delta (Aggregate - Line-level):
+  1.078431 - 3.000000 = -1.921569
+
+Weighting comparison:
+  Line-level mean : Line 1 = 50.00%, Line 2 = 50.00%
+  Aggregate corpus: Line 1 = 1.96% of words, Line 2 = 98.04% of words
+
+--- Part 2: Starter Corpora (gpt2 tokenizer) ---
+English (starter_kit\corpus_sample\eng_sample.txt):
+  - lines: 10
+  - tokens: 99
+  - words: 79
+  - original line-level fertility = 1.265206
+  - aggregate fertility = 1.253165
+  - delta = -0.012041
+
+Hindi (starter_kit\corpus_sample\hin_sample.txt):
+  - lines: 10
+  - tokens: 459
+  - words: 62
+  - original line-level fertility = 7.448452
+  - aggregate fertility = 7.403226
+  - delta = -0.045227
+
+================================================================================
+Summary of Conceptual Finding:
+The original fertility.py calculates: mean(tokens_i / words_i) across lines.
+This is mathematically valid and computes exactly what the script docstring states.
+It is NOT an implementation bug. It is a conceptual metric distinction:
+  - Line-weighted mean answers: 'What is the average fertility of a sentence?'
+  - Aggregate fertility answers: 'What is the total token cost per word across the corpus?'
+When sentences have unequal lengths, short outlier sentences exert disproportionate
+influence on the line-weighted mean, shifting it away from the true corpus-wide cost.
+================================================================================

@@ -1,0 +1,13 @@
+tokenizer,language,ratio_per_sentence,ratio_per_word,ratio_per_grapheme,ratio_per_byte,ratio_per_codepoint
+IndicBERTv2,eng,1.0,1.0,1.0,1.0,1.0
+IndicBERTv2,hin,1.17,1.0,1.8,0.46,1.18
+IndicBERTv2,tam,1.05,1.37,1.39,0.33,0.9
+IndicBERTv2,kan,1.1,1.49,1.6,0.39,1.05
+Qwen2.5,eng,1.0,1.0,1.0,1.0,1.0
+Qwen2.5,hin,4.42,3.77,6.79,1.73,4.45
+Qwen2.5,tam,6.11,7.98,8.1,1.91,5.24
+Qwen2.5,kan,6.92,9.41,10.12,2.44,6.63
+gpt2,eng,1.0,1.0,1.0,1.0,1.0
+gpt2,hin,7.42,6.34,11.39,2.9,7.46
+gpt2,tam,15.54,20.28,20.55,4.86,13.3
+gpt2,kan,13.59,18.48,19.83,4.78,12.99

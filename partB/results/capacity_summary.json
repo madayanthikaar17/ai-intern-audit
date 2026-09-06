@@ -1,0 +1,13 @@
+{
+  "b1_kv_bytes_per_token": 114688,
+  "b1_max_sequences_dec": 25,
+  "b1_max_sequences_bin": 29,
+  "b2_peak_throughput_batch": 24,
+  "b2_preemptions_batch_32": 7,
+  "b2_preemptions_batch_48": 23,
+  "b3_reported_formula": "num_requests * (prompt_len + gen_len) / wall_clock_s",
+  "b3_batch_24_end_to_end_gen_rate": 200.92,
+  "b3_batch_24_steady_state_decode_rate": 249.82,
+  "b3_batch_24_goodput_method1": 200.92,
+  "b3_batch_24_goodput_method2": 249.82
+}
